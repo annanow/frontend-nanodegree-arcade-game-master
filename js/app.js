@@ -44,6 +44,23 @@ var Player = function() {
     this.sprite = 'images/char-boy.png';
 };
 
+Player.prototype.update = function(dt) {
+
+    var own = this;
+
+    if (this.direction === 'left' && this.x > 0) {
+        this.x = this.x - 80;
+    }
+    if (this.direction === 'right' && this.x < 400) {
+        this.x = this.x + 80;
+    }
+    if (this.direction === 'up' && this.y > 0) {
+        this.y = this.y - 80;
+    }
+    if (this.direction === 'down' && this.y < 400) {
+        this.y = this.y + 80;
+    }
+
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
