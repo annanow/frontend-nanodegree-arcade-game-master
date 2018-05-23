@@ -61,6 +61,9 @@ Player.prototype.update = function(dt) {
         this.y = this.y + 80;
     }
 
+    this.direction = null;
+
+
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
