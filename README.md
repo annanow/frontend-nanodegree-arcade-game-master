@@ -1,4 +1,4 @@
-frontend-nanodegree-arcade-game
+Frontend Nanodegree Arcade Game
 ===============================
 
 This game is part of the Udacity FEND project. The game comes with a ready-to-use engine and images and it implements the student's skills in Object Oriented JavaScript.
