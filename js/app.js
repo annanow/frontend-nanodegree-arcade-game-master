@@ -85,6 +85,10 @@ Player.prototype.handleInput = function(e) {
     this.direction = e;
 };
 
+Player.prototype.reset = function() {
+    this.x = 200;
+    this.y = 400;
+};
 
 
 // Now instantiate your objects.
