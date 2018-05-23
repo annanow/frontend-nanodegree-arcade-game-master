@@ -63,6 +63,17 @@ Player.prototype.update = function(dt) {
 
     this.direction = null;
 
+    allEnemies.forEach(function(enemy) {
+        if (own.x >= enemy.x - 35 && own.x <= enemy.x + 35) {
+            if (own.y >= enemy.y - 35 && own.y <= enemy.y + 35) {
+                own.reset();
+            }
+        }
+    });
+    if (this.y < 10) {
+        this.reset();
+    }
+
 
 
 // Now instantiate your objects.
